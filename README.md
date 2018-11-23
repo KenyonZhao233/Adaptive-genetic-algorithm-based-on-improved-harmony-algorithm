@@ -1,5 +1,5 @@
 # An improved genetic algorithm based on harmony algorith
-![Image text]https://github.com/KenyonZhao233/An-improved-genetic-algorithm-based-on-harmony-algorithm/blob/master/图片/1.png
+![Image text](https://github.com/KenyonZhao233/An-improved-genetic-algorithm-based-on-harmony-algorithm/blob/master/图片/1.png)
   遗传算法是一种借鉴生物界自然选择和自然遗传机制的随机化搜索算法。由于其适应不同任务的泛化能力较强，被广泛应用于非线性、多目标、多变量、复杂的自适应系统中。
   在马尔可夫决策过程中，遗传算法负责解决由动作奖励（R）优化转移概率（P）的过程。遗传算法有三个的基本操作：选择、交叉和变异。选择的目的是从当前种群中选出优良的个体，即动作奖励高的转移概率，使他们有机会作为父代繁衍子孙。交叉过程中，由于在当前状态约束下的动作空间较小，为了更好地保留最优解，遗传算法使用完全交叉方式， 同时也提高了模型的收敛速度。变异即是转移概率在当前状态约束下的动作空间内，进行有约束的变异。
 
