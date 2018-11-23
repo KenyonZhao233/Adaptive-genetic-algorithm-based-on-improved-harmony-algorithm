@@ -3,10 +3,6 @@
   
   遗传算法是一种借鉴生物界自然选择和自然遗传机制的随机化搜索算法。
   由于其适应不同任务的泛化能力较强，被广泛应用于非线性、多目标、多变量、复杂的自适应系统中。
-  在马尔可夫决策过程中，遗传算法负责解决由动作奖励（R）优化转移概率（P）的过程。遗传算法有三个的基本操作：
-  选择、交叉和变异。选择的目的是从当前种群中选出优良的个体，即动作奖励高的转移概率，使他们有机会作为父代繁衍子孙。
-  交叉过程中，由于在当前状态约束下的动作空间较小，为了更好地保留最优解，遗传算法使用完全交叉方式， 同时也提高了模型的收敛速度。变异即是转移概率在当前状态约束下的动作空间内，进行有约束的变异。
-
   但是传统遗传算法收敛速度慢、容易陷入局部最优解，尤其在复杂问题中，收敛时间长且很难得到全局最优解。
   为了解决这两个问题，我们采取了两种不同的改进优化方案：自适应遗传算法优化与基于和声算法的遗传算法优化。
   1.自适应遗传算法优化，即是通过计算种群中心区域密度，判断种群是否接近或者到达了某个局部最优解区域。
@@ -16,14 +12,10 @@
 ![Image text](https://github.com/KenyonZhao233/An-improved-genetic-algorithm-based-on-harmony-algorithm/blob/master/图片/2.png)![Image text](https://github.com/KenyonZhao233/An-improved-genetic-algorithm-based-on-harmony-algorithm/blob/master/图片/3.png)
 
 ![Image text](https://github.com/KenyonZhao233/An-improved-genetic-algorithm-based-on-harmony-algorithm/blob/master/图片/4.PNG)
+
 2.基于和声算法的遗传算法优化
 （1）和声搜索算法（HS）
   简介：是一种新的启发式全局搜索算法，智能模拟了音乐演奏的原理。
-  HS采用一套新的随机导数用于离散变量，通过反复调整记忆库中的解变量，使函数值随着迭代次数的增加不断收敛，以确保算法的快速收敛性，从而来完成优化。
-  当HS算法处于局部最优时，同时此局部最优恰好也是全局最优时，HS算法也可以提取最优解。它能够最大程度克服遗传算法多次震荡不能达到局部最优点的理论缺陷。
-  算法原理：HS算法将乐器i（i=1，2，……，m）类比于优化问题中的第i个设计变量，各乐器声调的和声Rj（j=1，2，……，M）相当于优化问题的第j个解向量，评价类比于目标函数。
-  算法首先产生M个初始解（和声）放入和声记忆库HM（harmony memory)内，以概率HMCR在HM内搜索新解，以概率1-HMCR在HM外变量可能值域中搜索。
-  然后算法以概率PAR对新解产生局部扰动。判断新解目标函数值是否优于HM内的最差解，若是，则替换之；然后不断迭代，直至达到预定迭代次数Tmax为止。
  ![Image text](https://github.com/KenyonZhao233/An-improved-genetic-algorithm-based-on-harmony-algorithm/blob/master/图片/5.png)
  
 （2）和声算法的推广
