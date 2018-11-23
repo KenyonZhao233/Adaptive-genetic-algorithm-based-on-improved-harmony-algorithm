@@ -1,4 +1,5 @@
 # Adaptive genetic algorithm based on improved harmony algorithm
+
 ![Image text](https://github.com/KenyonZhao233/An-improved-genetic-algorithm-based-on-harmony-algorithm/blob/master/图片/1.png)
   
   遗传算法是一种借鉴生物界自然选择和自然遗传机制的随机化搜索算法。
@@ -16,9 +17,11 @@
 
 ![Image text](https://github.com/KenyonZhao233/An-improved-genetic-algorithm-based-on-harmony-algorithm/blob/master/图片/4.PNG)
 
+
 # 2.基于和声算法的遗传算法优化
 （1）和声搜索算法（HS）
   简介：是一种新的启发式全局搜索算法，智能模拟了音乐演奏的原理。
+  
  ![Image text](https://github.com/KenyonZhao233/An-improved-genetic-algorithm-based-on-harmony-algorithm/blob/master/图片/5.png)
  
 （2）和声算法的推广
